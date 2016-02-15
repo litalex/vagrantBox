@@ -1,0 +1,11 @@
+CHANGED puphpet/config.yaml:
+ - default_locale: 'en_US.UTF-8 UTF-8' => en_US.UTF-8
+ - locales:
+	- 'en_GB.UTF-8 UTF-8' => en_GB.UTF-8
+	- 'en_US.UTF-8 UTF-8' => en_US.UTF-8
+
+CHANGED puphpet/puppet/modules/puphpet/templates/nodejs/install.erb
+ - http://nodejs.org/dist/latest/SHASUMS.txt => http://nodejs.org/dist/latest/SHASUMS256.txt
+
+CHANGED puphpet/puppet/modules/nginx/manifests/resource/location.pp
+ - validate_bool($internal) => validate_bool(false)

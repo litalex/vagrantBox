@@ -1,0 +1,18 @@
+vagrantfile:
+    vm:
+        hostname: am.araneum.dev
+        memory: 2048
+        cpus: 1
+        network:
+            private_network: 192.168.50.100
+            public_network: 192.168.70.233
+        synced_folder:
+            araneum.dev:
+                source: ./www
+                target: /var/www
+nginx:
+    vhosts:
+        litalex.dev:
+            server_name: 
+            server_aliases:
+                - www.litalex.dev
